@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.fightArea {
+    display: flex;
+    gap: 20px;
+}
+
+#char, #monster {
+    flex: 1;  /*Vai fazer com que os ID´s dividam o espaço disponível igualmente entre eles*/
+}
+
+.lifeBar {
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.lifeBar .bar {
+    height: inherit; /*Herda a altura da life bar*/
+    background-color: red;
+    border-radius: 5px;
+}
+
+.log {
+    border: 1px dotted #999;
+    height: 200px;
+    overflow-y: scroll;
+}
